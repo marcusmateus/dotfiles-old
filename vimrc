@@ -56,26 +56,35 @@ filetype plugin indent on
 " ========================================================================
 "   Advanced:
 " ========================================================================
-" Whitespace
+""" Whitespace
 set tabstop=2 shiftwidth=2
 set expandtab
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
-" Key bindings
+""" Key bindings
 let mapleader=','
 
 " TODO: Find out what <leader>s does??
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-"" Tcomment
+""" Tcomment
 " TODO: Should I simply change first line to :TCommentBlock ??
 noremap <leader>c :TComment<cr>
 " vnoremap <leader>cb :TCommentBlock<cr> " Hmm, above fires before can enter 'b'
 
-"" Set Theme
+""" Set Theme
 colorscheme twilight
+
+""" what files to ignore when doing filename completion, etc.
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+" Ignore bundler and sass cache
+set wildignore+=vendor/gems/*,vendor/cache/*,.bundle/*,.sass-cache/*
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
 
 " ========================================================================
 "   Vim Operational Settings:
