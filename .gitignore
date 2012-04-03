@@ -1,0 +1,3 @@
+!.gitkeep
+# The bundle dir is managed by vundle
+vim/bundle
