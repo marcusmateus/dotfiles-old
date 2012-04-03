@@ -1,0 +1,37 @@
+# Tell vim this is a bash file
+# vim: set filetype=sh :
+
+#### Editor Settings
+export VISUAL=vim
+export EDITOR="$VISUAL"
+
+#### History via: https://github.com/r00k/dotfiles/blob/master/bash/history_config
+# Gimme a huge history - store 10,000 entries
+export HISTSIZE=10000
+
+# Don't store duplicate lines in history 
+export HISTCONTROL=ignoreboth #ignorespace:ignoredups
+
+# Apend to history instead of overwriting
+shopt -s histappend
+
+# Unify histories across screen sessions
+PROMPT_COMMAND="history -a; history -n"
+
+#### ls colors
+# Handle platform specific options
+platform=`uname`
+export CLICOLOR=1
+if [[ $platform == 'Linux' ]]; then
+  # alias ls='ls --color'
+  export LSCOLORS='di=1;;40:ln=1;;40:so=32;40:pi=33;
+                   40:ex=1;;40:bd=34;46:cd=34;43:su=0;
+                   41:sg=0;46:tw=0;42:ow=0;43:'
+elif [[ $platform == 'Darwin' ]]; then
+  # alias ls='ls -G'
+  export LSCOLORS=ExGxcxdxCxegedabagacad
+fi
+
+#### Set Prompt
+PROMPT_COMMAND="$PROMPT_COMMAND;bash_prompt"
+
