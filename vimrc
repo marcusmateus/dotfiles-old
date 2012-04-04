@@ -19,9 +19,13 @@ call vundle#rc()
 " Let Vundle manage Vundle (required)! 
 Bundle 'gmarik/vundle'
 
-" Functional customizations
+""" Functional customizations
+" Fuzzy file finder
 Bundle 'ctrlp.vim'
+" Quick (un)commenting
 Bundle 'tomtom/tcomment_vim'
+" Visual indentation level guides
+Bundle 'nathanaelkane/vim-indent-guides'
 
 " Colors
 Bundle 'scottymoon/vim-twilight'
@@ -81,7 +85,7 @@ let mapleader=','
 nnoremap <leader>ev :split $MYVIMRC<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
-""" Tcomment
+""" Bundle: Tcomment
 " TODO: Should I simply change first line to :TCommentBlock ??
 noremap <leader>c :TComment<cr>
 " vnoremap <leader>cb :TCommentBlock<cr> " Hmm, above fires before can enter 'b'
@@ -89,7 +93,7 @@ noremap <leader>c :TComment<cr>
 " ========================================================================
 "   Visual:
 " ========================================================================
-"" Margin line numbers
+""" Margin line numbers
 set number
 set numberwidth=4
 
