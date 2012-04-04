@@ -26,6 +26,9 @@ Bundle 'tomtom/tcomment_vim'
 " Colors
 Bundle 'scottymoon/vim-twilight'
 
+" Programming Languages
+Bundle 'kchmck/vim-coffee-script'
+
 " TODO: Explore these
 " Bundle 'tpope/vim-surround' "mappings to surrond code w/ brackets, quotes, etc.
 " Bundle 'tpope/vim-fugitive' "git commands??
@@ -42,7 +45,7 @@ Bundle 'scottymoon/vim-twilight'
 filetype plugin indent on " required!
 
 " ========================================================================
-"   The Basics:
+"   General:
 " ========================================================================
 " TODO: Switch syntax highlighting to enable so we can override w/ :highlights??
 syntax on "enable
@@ -53,15 +56,24 @@ set encoding=utf-8
 " load file type plugins and indentation
 filetype plugin indent on 
 
-" ========================================================================
-"   Advanced:
-" ========================================================================
 """ Whitespace
 set tabstop=2 shiftwidth=2
 set expandtab
 " Make backspace behave in a sane manner.
 set backspace=indent,eol,start
 
+""" what files to ignore when doing filename completion, etc.
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
+" Disable archive files
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+" Ignore bundler and sass cache
+set wildignore+=vendor/gems/*,vendor/cache/*,.bundle/*,.sass-cache/*
+" Disable temp and backup files
+set wildignore+=*.swp,*~,._*
+
+" ========================================================================
+"   Advanced:
+" ========================================================================
 """ Key bindings
 let mapleader=','
 
@@ -74,17 +86,15 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 noremap <leader>c :TComment<cr>
 " vnoremap <leader>cb :TCommentBlock<cr> " Hmm, above fires before can enter 'b'
 
-""" Set Theme
-colorscheme twilight
+" ========================================================================
+"   Visual:
+" ========================================================================
+"" Margin line numbers
+set number
+set numberwidth=4
 
-""" what files to ignore when doing filename completion, etc.
-set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.class,.svn,*.gem
-" Disable archive files
-set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
-" Ignore bundler and sass cache
-set wildignore+=vendor/gems/*,vendor/cache/*,.bundle/*,.sass-cache/*
-" Disable temp and backup files
-set wildignore+=*.swp,*~,._*
+" Set Theme
+colorscheme twilight
 
 " ========================================================================
 "   Vim Operational Settings:
