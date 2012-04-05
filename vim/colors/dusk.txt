@@ -1,0 +1,71 @@
+# Saving this file will update the current colour scheme.
+Basis:None
+Colours:
+	grey_blue:#8a9597
+	light_grey_blue:#a0a8b0
+	dark_grey_blue:#34383c
+	mid_grey_blue:#64686c
+	beige:#ceb67f
+	light_orange:#ebc471
+	yellow:#e3d796
+	violet:#a999ac
+	green:#a2a96f
+	lightgreen:#c2c98f
+	red:#d08356
+	cyan:#74dad9
+	darkgrey:#1a1a1a
+	grey:#303030
+	lightgrey:#605958
+	white:#fffedc
+
+Dark:
+	Visual:BG=#404040
+	Cursor:BG=#b0d0f0
+
+	Normal:white,darkgrey
+	Underlined:white,Style=underline
+	NonText:lightgrey,grey
+	SpecialKey:grey,darkgrey
+	LineNr:mid_grey_blue,dark_grey_blue,Style=none
+	StatusLine:white,grey,Style=italic,underline
+	StatusLineNC:lightgrey,grey,Style=italic,underline
+	VertSplit:grey,grey,Style=none
+	Folded:grey_blue,dark_grey_blue,Style=none
+	FoldColumn:grey_blue,dark_grey_blue,Style=none
+	SignColumn:grey_blue,dark_grey_blue,Style=none
+	Comment:mid_grey_blue,Style=italic
+	Title:red,darkgrey,Style=underline
+	TODO:grey_blue,darkgrey,Style=italic,bold
+	Constant:red,darkgrey,Style=none
+	String:green,darkgrey,Style=none
+	Special:lightgreen,darkgrey,Style=none
+	Identifier:grey_blue,darkgrey,Style=none
+	Statement:beige,darkgrey,Style=none
+	Conditional:beige,darkgrey,Style=none
+	Repeat:beige,darkgrey,Style=none
+	Structure:beige,darkgrey,Style=none
+	Function:violet,darkgrey,Style=none
+	PreProc:grey_blue,darkgrey,Style=none
+	Operator:light_orange,darkgrey,Style=none
+	Type:yellow,darkgrey,Style=italic
+
+	Search:#606000,#c0c000,Style=bold
+	Directory:#dad085,Style=none
+	Error:BG=#602020
+
+	# > 700
+  CursorLine:BG=#262626
+  CursorColumn:BG=#262626
+  MatchParen:white,#80a090,Style=bold
+
+  #Tabpages
+  TabLine:#a09998,#202020,Style=underline
+  TabLineFill:#a09998,#202020,Style=underline
+  TabLineSel:#a09998,#404850,Style=underline
+
+  #P-Menu (auto-completion)
+  Pmenu:#605958,#303030,Style=underline
+  PmenuSel:#a09998,#404040,Style=underline
+
+# vim: ff=unix:noet:ft=EasyColour
+

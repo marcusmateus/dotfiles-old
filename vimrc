@@ -27,7 +27,10 @@ Bundle 'tomtom/tcomment_vim'
 " Visual indentation level guides
 Bundle 'nathanaelkane/vim-indent-guides'
 
-" Colors
+""" Colors
+" Simplified authoring / tweaking of vim color schemes
+Bundle 'abudden/EasyColour'
+" A gui only theme I've used for a while, but am tiring of
 Bundle 'scottymoon/vim-twilight'
 
 " Programming Languages
@@ -40,9 +43,6 @@ Bundle 'kchmck/vim-coffee-script'
 " Bundle 'tpope/vim-rails'
 " Bundle 'vim-ruby/vim-ruby'
 " Bundle 'kchmck/vim-coffee-script'
-
-" This or http://bytefluent.com/vivify/ railscast, vividchalk, or other theme??
-" Bundle 'jpo/vim-railscasts-theme'
 
 " TODO: Find out why this is required
 "   ... repeated below for completeness
@@ -98,7 +98,7 @@ set number
 set numberwidth=4
 
 " Set Theme
-colorscheme twilight
+colorscheme tm_twilight
 
 " ========================================================================
 "   Vim Operational Settings:
