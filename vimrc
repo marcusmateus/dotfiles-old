@@ -33,16 +33,15 @@ Bundle 'abudden/EasyColour'
 " A gui only theme I've used for a while, but am tiring of
 Bundle 'scottymoon/vim-twilight'
 
-" Programming Languages
+""" Programming Languages
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-haml'
 Bundle 'kchmck/vim-coffee-script'
 
 " TODO: Explore these
 " Bundle 'tpope/vim-surround' "mappings to surrond code w/ brackets, quotes, etc.
 " Bundle 'tpope/vim-fugitive' "git commands??
-" Language bundles
-" Bundle 'tpope/vim-rails'
-" Bundle 'vim-ruby/vim-ruby'
-" Bundle 'kchmck/vim-coffee-script'
 
 " TODO: Find out why this is required
 "   ... repeated below for completeness
