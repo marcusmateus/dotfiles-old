@@ -16,7 +16,7 @@ export HISTCONTROL=ignoreboth #ignorespace:ignoredups
 shopt -s histappend
 
 # Unify histories across screen sessions
-PROMPT_COMMAND="history -a; history -n"
+# PROMPT_COMMAND="history -a; history -n"
 
 #### ls colors
 # Handle platform specific options
@@ -33,5 +33,5 @@ elif [[ $platform == 'Darwin' ]]; then
 fi
 
 #### Set Prompt
-PROMPT_COMMAND="$PROMPT_COMMAND;bash_prompt"
+PROMPT_COMMAND="bash_prompt"
 
