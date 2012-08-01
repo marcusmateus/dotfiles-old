@@ -9,3 +9,5 @@ source ~/.bash/config
 if [ -f ~/.bashrc.local ]; then
   source ~/.bashrc.local
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
