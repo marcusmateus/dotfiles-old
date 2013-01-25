@@ -29,7 +29,7 @@ Bundle 'nathanaelkane/vim-indent-guides'
 
 """ Colors
 " Simplified authoring / tweaking of vim color schemes
-Bundle 'vim-scripts/EasyColour'
+Bundle 'skroll/vim-easycolour'
 " A gui only theme I've used for a while, but am tiring of
 Bundle 'scottymoon/vim-twilight'
 
